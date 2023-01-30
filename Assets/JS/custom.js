@@ -1,9 +1,12 @@
-const head = document.getElementById("head");
+const header = document.getElementById("head");
+window.onscroll = function () {
 if (document.body.scrollTop > 48 || document.documentElement.scrollTop > 48) {
-  head.classList.add("fixed");
-  head.classList.remove("mt-6");
-  head.classList.add("bg-[#fdfbfe]");
+  header.classList.remove("mt-6");
+  header.classList.add("fixed");
+  header.classList.add("bg-[#fdfbfe]");
 } else {
-  head.classList.remove("fixed");
-  head.classList.add("mt-6");
+  header.classList.add("mt-6");
+  header.classList.remove("fixed");
+  header.classList.remove("bg-[#fdfbfe]");
+}
 }
