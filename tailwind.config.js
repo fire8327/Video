@@ -5,4 +5,4 @@ theme: {
 extend: {},
 },
 plugins: [],
-}]
+}
